@@ -1,0 +1,20 @@
+@Web_HostAddress = http://localhost:5178
+
+GET {{Web_HostAddress}}/api/weatherforecast/
+Accept: application/json
+
+### 
+
+GET {{Web_HostAddress}}/api/peoples
+Accept: application/json
+
+###
+
+POST {{Web_HostAddress}}/api/peoples
+Content-Type: application/json
+{
+    "id":1, 
+    "name":"name"
+}
+
+###
